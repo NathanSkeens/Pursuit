@@ -24,7 +24,7 @@ class GameScene: SKScene {
         
 }
     override func update(_ currentTime: CFTimeInterval) {
-        moveGrounds()
+        moveGround()
     }
         func createGrounds(){
             
@@ -38,6 +38,7 @@ class GameScene: SKScene {
                 ground.position = CGPoint(x: CGFloat(i) * ground.size.width, y: -(self.frame.size.height / 2))
                 
                 self.addChild(ground)
+            }
             }
             
             func moveGround(){
@@ -60,5 +61,5 @@ class GameScene: SKScene {
             
         }
         
-    }
+    
 
