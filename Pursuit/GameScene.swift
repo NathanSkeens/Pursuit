@@ -10,6 +10,7 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
+    var player = SKSpriteNode(imageNamed: "stickman2")
     
     var ground = SKSpriteNode()
     
@@ -20,12 +21,13 @@ class GameScene: SKScene {
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         
         
-        
-        
+        createGrounds() 
+        createDude()
 }
     override func update(_ currentTime: CFTimeInterval) {
         moveGround()
     }
+    
         func createGrounds(){
             
             for i in 0...3{
@@ -44,12 +46,13 @@ class GameScene: SKScene {
             func moveGround(){
                 self.enumerateChildNodes( withName: "Ground", using: ({
                     (node, error) in
-                    node.position.x -= 2
+                       node.position.x -= 2
                     if node.position.x < -((self.scene?.size.width)!) {
                         
                     
                         node.position.x += (self.scene?.size.width)! * 3
                     }
+                    
                 }))
                 
                 
@@ -57,7 +60,15 @@ class GameScene: SKScene {
                 
                 
             }
-        
+    func createDude(){
+        player.position = CGPoint(x: 50 , y: 50)
+        player.physicsBody = SKPhysicsBody(rectangleOf:CGSize(width: player.size.width, height: player.size.height))
+        player.physicsBody?.affectedByGravity
+        player.physicsBody?.pinned = true
+        player.scale(to: CGSize(width: 100, height: 100))
+        addChild(player)
+    }
+    
             
         }
         

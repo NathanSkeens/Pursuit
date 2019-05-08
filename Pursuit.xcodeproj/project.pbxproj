@@ -15,6 +15,7 @@
 		0310F0A62271EF9200F12790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0310F0A42271EF9200F12790 /* Main.storyboard */; };
 		0310F0A82271EF9300F12790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0310F0A72271EF9300F12790 /* Assets.xcassets */; };
 		0310F0AB2271EF9300F12790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0310F0A92271EF9300F12790 /* LaunchScreen.storyboard */; };
+		E19B09C1227B2CFE008994FB /* Ground-PNG-HD.png in Resources */ = {isa = PBXBuildFile; fileRef = E19B09C0227B2CFE008994FB /* Ground-PNG-HD.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0310F0A72271EF9300F12790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0310F0AA2271EF9300F12790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0310F0AC2271EF9300F12790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E19B09C0227B2CFE008994FB /* Ground-PNG-HD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ground-PNG-HD.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				0310F0A22271EF9200F12790 /* GameViewController.swift */,
 				0310F0A42271EF9200F12790 /* Main.storyboard */,
 				0310F0A72271EF9300F12790 /* Assets.xcassets */,
+				E19B09C0227B2CFE008994FB /* Ground-PNG-HD.png */,
 				0310F0A92271EF9300F12790 /* LaunchScreen.storyboard */,
 				0310F0AC2271EF9300F12790 /* Info.plist */,
 			);
@@ -133,6 +136,7 @@
 			files = (
 				0310F0A62271EF9200F12790 /* Main.storyboard in Resources */,
 				0310F09D2271EF9200F12790 /* GameScene.sks in Resources */,
+				E19B09C1227B2CFE008994FB /* Ground-PNG-HD.png in Resources */,
 				0310F0A82271EF9300F12790 /* Assets.xcassets in Resources */,
 				0310F0AB2271EF9300F12790 /* LaunchScreen.storyboard in Resources */,
 				0310F09F2271EF9200F12790 /* Actions.sks in Resources */,
